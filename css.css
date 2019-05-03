@@ -1,0 +1,71 @@
+        body {
+            background-image: url(./123.svg);
+            /* animation: bg 2s linear infinite normal; */
+            /* animation-timing-function:step-start; */
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #out {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -250px;
+            margin-left: -250px;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 255, 76, 0.349);
+        }
+
+        table tr td {
+            font-size: 20pt;
+            text-align: center;
+            background-color: rgba(0, 0, 7, 0.774);
+            color: rgba(140, 255, 178, 0.842)
+                /* background-image: url(./td.jpg); */
+
+        }
+
+        table tr td:hover {
+            color: rgb(0, 70, 35);
+            transition: 0.3s;
+            font-weight: 900;
+            background-color: rgba(108, 255, 199, 0.521);
+            cursor: pointer;
+        }
+
+        #input {
+            text-align: right;
+            padding-right: 20px;
+            background-color: rgba(255, 255, 255, 0.562);
+            color: rgb(0, 114, 76);
+            font-size: 30pt;
+        }
+
+        .highlight {
+            position: absolute;
+            z-index: -1;
+            width: 100vw;
+            height: 0.5vh;
+            background-color: rgba(0, 0, 0, 0.513);
+            animation: myfirst 2s linear infinite;
+        }
+
+        @keyframes myfirst {
+            0% {
+                top: 100%;
+            }
+
+            100% {
+                top: 0%;
+            }
+        }
+    
